@@ -1,0 +1,33 @@
+# Configuração global do Git
+git config --global user.name "daaviinchiii"
+git config --global user.email "dvdcardoso23@gmail.com"
+
+# Clonar repositório e abrir no VS Code
+git clone https://github.com/daaviinchiii/git-treino
+cd git-treino
+code .
+
+# Adicionar e fazer commit no main
+git add .
+git commit -m "inserindo o ficheiro log.txt"
+git branch -M main
+git remote add origin https://github.com/daaviinchiii/git-treino.git
+git push -u origin main
+
+# Nova mudança no main
+git add .
+git commit -m "mudança feita"
+git push
+
+# Criar e mudar para nova branch
+git checkout -b nova-feature
+
+# Confirmar branch atual
+git branch
+
+# Adicionar, commit e push na nova branch
+git add .
+git commit -m "mudança na nova branch"
+git push -u origin nova-feature
+
+
